@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 0fr);
+            grid-gap: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .items {
+            background-color: rgb(234, 15, 15);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .items:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">this is first</div>
+        <div class="items">this is second</div>
+        <div class="items">this is third</div>
+        <div class="items">this is four</div>
+        <div class="items">this is fifth</div>
+        <div class="items">this is sixth</div>
+        <div class="items">this is seventh</div>
+        <div class="items">this is eighth</div>
+        <div class="items">this is ninth</div>
+        <div class="items">this is tenth</div>
+    </div>
+
+</body>
+
+</html>

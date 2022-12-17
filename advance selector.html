@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        .container li p{
+            background-color: red;
+            color: white;
+
+        }
+        div+p{
+            color: blue;
+            background-color: aqua;
+        }
+       div>p{
+color: white;
+background-color: papayawhip;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <ul>
+                <li class="item"><p>i am under li</p></li>
+            </ul>
+            <p>i am para</p>
+        </div>
+        <p>i am another para</p>
+
+    </div>
+    
+</body>
+</html>

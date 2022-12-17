@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            /* justify-content: center; */
+            border: 1px solid black;
+            height: 200px;
+            width: 100vw;
+            background-color: rebeccapurple;
+            
+
+        }
+.main{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    /* justify-content: right; */
+    /* display: flex; */
+    position: relative;
+    animation-name: ritesh;
+    animation-duration: 3s;
+    animation-iteration-count:5;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    margin: 0px 0px;
+   
+}
+    @keyframes ritesh {
+        0%{
+
+
+            top: 0px;
+            left: 0px;
+            height: 50px;
+            color: 50% red;
+        }
+        12.5%{
+            height: 100px;
+        }
+        25%{
+            top: 275px;
+            left: 0px;
+            height: 50px;
+        }
+        
+        50%{
+            top: 275px;
+            left:275px;
+            height: 50px;
+        }
+        60%{
+            height: 100px;
+
+        }
+        75%{
+            top: 0px;
+            left: 275px;
+            height: 50px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+            height: 50px;
+        }
+    }
+    .main2{
+        height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    flex-direction: row;
+    margin: 0px 251px;
+    /* justify-content:flex-end; */
+    /* display: flex; */
+    position: relative;
+    animation-name: ritesh1;
+    animation-duration: 3s;
+    animation-iteration-count:5;
+    animation-fill-mode: reverse;
+    animation-delay: 3s;
+    
+    }
+    @keyframes ritesh1 {
+        0%{
+            top: 0px;
+            left: 0px;
+            height: 50px;
+        }
+        12.5%{
+            height: 100px;
+        }
+        25%{
+            top: 275px;
+            left: 0px;
+            height: 50px;
+        }
+        
+        50%{
+            top: 275px;
+            left:275px;
+            height: 50px;
+        }
+        60%{
+            height: 100px;
+
+        }
+        75%{
+            top: 0px;
+            left: 275px;
+            height: 50px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+            height: 50px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+    </div>
+    <div class="main2">
+    </div>
+</div>
+</body>
+</html>

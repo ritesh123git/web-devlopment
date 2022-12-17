@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* text-shadow: 10px grey; */
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .nav {
+            font-family: 'Bree Serif', serif;
+        }
+
+        ul {
+            display: flex;
+            font-size: 20px;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .item {
+            list-style: none;
+            padding: 20px;
+
+
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid white; */
+            height: 344px;
+            margin: 3px 212px;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-family: 'Bree Serif', serif;
+            margin: 7px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+        a:hover{
+            color: rgb(170, 150, 146);
+        }
+        h2::first-letter{
+            background-color: grey;
+            
+        }
+        div{
+            display:flex;
+        }
+        input{
+            padding: 7px;
+            margin: 52px auto;
+            width: 384px;
+            border-radius: 35px;
+            justify-content: center;
+            font-family: 'Bree Serif', serif;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        input:hover{
+            background-color: rgb(174, 173, 173);
+            /* box-shadow: 7px 3px rgb(10, 2, 2); */
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li class="item"><a href="#">home</a></li>
+                <li class="item"><a href="#">about</a></li>
+                <li class="item"><a href="#">services</a></li>
+                <li class="item"><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Biryani's bowls</h2>
+        <p>visit our store for experiance the authentic taste of mughlai biryani</p>
+    </section>
+    <div>
+    <input type="button" value="order now">
+</div>
+</body>
+
+</html>
